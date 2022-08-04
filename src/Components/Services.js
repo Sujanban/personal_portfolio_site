@@ -1,12 +1,10 @@
 import React from 'react'
 import {MdWebAsset,MdDesignServices,MdContentPaste} from "react-icons/md"
-import {GrArticle} from "react-icons/gr"
-
 
 
 export default function Services() {
   return (
-    <div className='services'>
+    <section id='services'  className='services'>
       <h5>What I Offer</h5>
       <h1>Services</h1>
       <div className='services_items'>
@@ -29,6 +27,6 @@ export default function Services() {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

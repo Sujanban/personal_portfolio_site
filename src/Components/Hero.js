@@ -5,12 +5,12 @@ import cv from '../Images/CV.pdf';
 
 export default function Hero() {
   return (
-    <div className='hero'>
-      <div className='hero_img'>
+    <section id='/'  className='hero'>
+      {/* <div className='hero_img'> */}
         {/* <img src={profile}></img> */}
         <img src={hero} alt="profile"></img>
 
-      </div>
+      {/* </div> */}
 
       <div className='hero_info'>
         <h5>Hello I'm</h5>
@@ -18,9 +18,9 @@ export default function Hero() {
         <h5>Frontend Developer</h5>
         <div className='cta'>
           <a href={cv} download className='btn-outline'>Download CV</a>
-          <a href='' className='btn'>Lets Talk</a>
+          <a href='#contact' className='btn'>Lets Talk</a>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
