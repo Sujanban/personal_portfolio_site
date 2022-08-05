@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import { MdOutlineMail } from 'react-icons/md'
 import { RiMessengerLine, RiWhatsappLine } from 'react-icons/ri'
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 export default function Contact() {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000
+    });
+  },[]);
 
   // emailjs
   const form = useRef();
@@ -27,21 +34,21 @@ export default function Contact() {
       <h1>Lets Talk!</h1>
       <div className='conatact_info'>
         <div className='contact_first'>
-          <div className='contact_item'>
+          <div className='contact_item' data-aos="fade-left">
             <h1><MdOutlineMail /></h1>
             <h3>Email</h3>
             <p>bansujan@gmail.com
             </p>
             <a href='mailto: bansujan@gmail.com'>Send Message</a>
           </div>
-          <div className='contact_item'>
+          <div className='contact_item' data-aos="fade-left">
             <h1><RiMessengerLine /></h1>
             <h3>Messanger</h3>
             <p>Sujan Ban
             </p>
             <a href='https://www.facebook.com/profile.php?id=100008615196537'>Send Message</a>
           </div>
-          <div className='contact_item'>
+          <div className='contact_item' data-aos="fade-left">
             <h1><RiWhatsappLine /></h1>
             <h3>WhatsApp</h3>
             <p>(977) 9823421386
@@ -49,7 +56,7 @@ export default function Contact() {
             <a href='mailto: bansujan@gmail.com'>Send Message</a>
           </div>
         </div>
-        <div className='contact_second'>
+        <div className='contact_second' data-aos="fade-right">
           <form ref={form} onSubmit={sendEmail}>
             <div>
               <label>Full Name</label><br />

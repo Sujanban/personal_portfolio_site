@@ -1,9 +1,19 @@
-import React from 'react';
-import profile from '../Images/hero.png'
+import React, { useEffect } from 'react';
+import profile from '../Images/hero.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function About() {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000
+    });
+  },[]);
   return (
-    <section id='about' className='about'>
+    <section id='about' className='about' 
+    data-aos="fade-right"
+    // data-aos-easing="ease-in-out"
+    >
       <h5>Get To Know</h5>
       <h1>About Me</h1>
       <div className='about_main'>
@@ -18,16 +28,16 @@ export default function About() {
           <div className='about_skill'>
             <h1>My Skills</h1>
             <div className='items'>
-              <div className='item item_one'>
+              <div className='item item_one' data-aos="flip-left">
                 <h3>HTML</h3>
               </div>
-              <div className='item item_two'>
+              <div className='item item_two' data-aos="fade-right">
                 <h3>CSS</h3>
               </div>
-              <div className='item item_three'>
+              <div className='item item_three' data-aos="fade-right">
                 <h3>JAVASCRIPT</h3>
               </div>
-              <div className='item item_four'>
+              <div className='item item_four' data-aos="flip-left">
                 <h3>REACT</h3>
               </div>
             </div>

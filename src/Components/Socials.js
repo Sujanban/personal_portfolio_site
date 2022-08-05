@@ -4,6 +4,7 @@ import { IconContext } from "react-icons";
 
 export default function Socials() {
   return (
+    
     <IconContext.Provider value={{color:"rgb(12, 120, 102)", size:'1.5rem'}}>
         <div>
         <div className='socials'>
