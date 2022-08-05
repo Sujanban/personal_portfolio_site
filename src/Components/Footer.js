@@ -16,7 +16,7 @@ export default function Footer() {
                 <h2>Links</h2>
                 <div className="link_column">
                     <div>
-                        <a href="/">Home</a>
+                        <a href="#">Home</a>
                         <a href="#about">About</a>
                         <a href="#services">Services</a>
                     </div>

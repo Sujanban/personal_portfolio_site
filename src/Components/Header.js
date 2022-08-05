@@ -12,7 +12,7 @@ export default function Header() {
                     <a href="#projects"><GrProjects />Projects</a>
                     <a href="#contact"><GrContactInfo />Contact</a> */}
 
-                    <a href="/">Home</a>
+                    <a href="#">Home</a>
                     <a href="#about">About</a>
                     <a href="#services">Services</a>
                     <a href="#projects">Projects</a>

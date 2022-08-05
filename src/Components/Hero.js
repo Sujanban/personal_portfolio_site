@@ -5,7 +5,7 @@ import cv from '../Images/CV.pdf';
 
 export default function Hero() {
   return (
-    <section id='/'  className='hero'>
+    <section id='#'  className='hero'>
       {/* <div className='hero_img'> */}
         {/* <img src={profile}></img> */}
         <img src={hero} alt="profile"></img>
