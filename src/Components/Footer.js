@@ -27,8 +27,8 @@ export default function Footer() {
                 </div>
             </div>
             <div className="footer_newsletter">
-                <h5>Find me Fiverr</h5>
                 <h2>Hire Me As Freelancer</h2>
+                <h5>Find me Fiverr</h5>
                 <a href='https://www.fiverr.com/sujan_ban' className='btn'>Visit</a>
                 {/* <div>
                     <input type="checkbox" name="checkbox" className="term"/> I have read and agree to the <a

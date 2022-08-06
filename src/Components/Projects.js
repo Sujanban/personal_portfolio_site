@@ -10,16 +10,14 @@ import project3 from '../Images/project3.png'
 
 export default function Projects() {
   useEffect(() => {
-    AOS.init({
-      duration: 2000
-    });
+    AOS.init();
   },[]);
   return (
     <section id='projects'  className='project'>
       <h5>What Have I Designed</h5>
       <h1>My Portfolio</h1>
       <div className='project_items'>
-        <div className='project_item' data-aos="fade-right">
+        <div className='project_item' data-aos="fade-right" duration="2000">
           <div className='project_image'>
           <img src={project1} alt='Realestate Marketplace'></img>
           </div>
@@ -30,7 +28,7 @@ export default function Projects() {
             <a href='https://sujanban.github.io/realestate-marketplace/'><BsGlobe/></a>
           </p>
         </div>
-        <div className='project_item' data-aos="fade-right">
+        <div className='project_item' data-aos="fade-right" duration="3000">
           <img src={project2} alt='JS Snake Game'></img>
           <h3>JS Snake Game</h3>
           <p>
@@ -38,7 +36,7 @@ export default function Projects() {
             <a href='https://sujanban.github.io/js-snake-game/'><BsGlobe/></a>
           </p>
         </div>
-        <div className='project_item' data-aos="fade-right">
+        <div className='project_item' data-aos="fade-right" duration="4000">
           <img src={project3} alt='Business Website'></img>
           <h3>Business Website</h3>
           <p>

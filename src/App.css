@@ -38,7 +38,9 @@ border: 1px solid rgba(255, 255, 255, 0.3); */
   text-decoration: none;
   scroll-behavior: smooth;
 }
-
+body{
+  overflow-x: hidden;
+}
 header {
   position: absolute;
   position: fixed;
@@ -47,20 +49,22 @@ header {
   left: 50%;
   transform: translate(-50%);
   padding: 0.5rem;
-  /* From https://css.glass */
-  background: rgba(0, 0, 0, 0.19);
+
+  background: rgba(0, 0, 0, 0.40);
   border-radius: 6px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.7px);
   -webkit-backdrop-filter: blur(6.7px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 header a {
   padding: 0.25rem;
   margin: 0.15rem;
-  color: black;
+  /* color: black; */
+  color: white;
 }
+
 .nav a {
   text-align: center;
 }
@@ -108,8 +112,10 @@ header a:hover {
   background-color: rgb(12, 120, 102);
   color: white;
   font-weight: 500;
+  transition: 0.3s ease-out;
 }
-.btn:hover {  
+
+.btn:hover {
   outline: 1px solid rgb(12, 120, 102);
   color: black;
   font-weight: 500;
@@ -119,13 +125,14 @@ header a:hover {
 
 .btn-outline {
   padding: 0.75rem;
-  /* margin: 1rem; */
   border-radius: 3px;
   color: black;
   border: 1px solid rgb(12, 120, 102);
   background-color: transparent;
   font-weight: 500;
+  transition: 0.3s;
 }
+
 .btn-outline:hover {
   background-color: rgb(12, 120, 102);
   color: white;
@@ -178,25 +185,7 @@ header a:hover {
   text-align: center;
   position: relative;
 }
-.custom-shape-divider-top-1659610185 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
 
-.custom-shape-divider-top-1659610185 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 133px;
-}
-
-.custom-shape-divider-top-1659610185 .shape-fill {
-  fill: #0C7866;
-}
 .about>h1 {
   padding-bottom: 3rem;
 }
@@ -277,7 +266,6 @@ header a:hover {
 
 .services>h1 {
   padding-bottom: 3rem;
-
 }
 
 .services .services_items {
@@ -286,7 +274,8 @@ header a:hover {
 }
 
 .services .services_items .services_item {
-  background-color: rgb(12, 120, 102);
+  /* background-color: rgb(12, 120, 102); */
+  border: 1px solid rgb(12, 120, 102);
   margin: 1rem;
   padding: 1.5rem 1rem;
   border-radius: 5px;
@@ -295,8 +284,10 @@ header a:hover {
 .services .services_items .services_item h1 {
   font-size: 5rem;
   padding-top: 1rem;
-  color: white;
+  color: rgb(12, 120, 102);
+  ;
 }
+
 .services .services_items .services_item p {
   text-align: justify;
 }
@@ -334,9 +325,11 @@ header a:hover {
   border-radius: 5px;
   position: relative;
 }
-.project .project_items .project_item .project_image{
+
+.project .project_items .project_item .project_image {
   /* position: relative; */
 }
+
 .project .project_items .project_item img {
   /* height: 300px; */
   width: 100%;
@@ -432,10 +425,12 @@ header a:hover {
   line-height: 1.5rem;
   margin: 1rem;
 }
-.contact .conatact_info .contact_second form #submit{
+
+.contact .conatact_info .contact_second form #submit {
   width: initial;
   border: none;
 }
+
 .contact .conatact_info .contact_second form input,
 .contact .conatact_info .contact_second form textarea {
   width: 90%;
@@ -453,29 +448,24 @@ header a:hover {
 /* footer */
 
 .footer {
-  margin: none;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 100);
   color: white;
-  /*padding:2rem;*/
-  padding: auto 7%;
-  line-height: 2rem;
+  /* padding: 4% 6%; */
 
 }
 
 .footer .footer_main {
-
   border-bottom: 1px solid white;
-  display: flex;
-  /*flex-direction: row;*/
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 7rem 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  line-height: 2rem;
+  padding-bottom: 2.5rem;
+  padding: 4% 6%;
 
 }
 
 .footer_link .link_column a,
 .footer_main .footer_info p {
-  font-size: 0.9rem;
   color: #A0A2AD;
   font-weight: bolder;
 }
@@ -487,11 +477,9 @@ header a:hover {
 }
 
 .link_column {
-  /*border: 1px solid red;*/
   display: flex;
   justify-content: space-between;
-
-  /*flex-direction:column; */
+  /* padding-right: 15rem; */
 
 }
 
@@ -525,29 +513,19 @@ header a:hover {
   color: white;
 }
 
-.footer_newsletter>div {
+.footer_newsletter h5 {
+  margin-bottom: 1rem;
   color: #A0A2AD;
 }
 
-.footer_newsletter>div input {
-  background-color: transparent;
+.footer_newsletter .btn {
+  margin-left: 0;
 }
 
-.footer_newsletter a {
+.footer_newsletter .btn:hover {
   color: white;
 }
-.footer_newsletter h2 {
-  margin-bottom: 1rem;
-}
-.footer_newsletter .btn {
-  padding: 0.5rem 0.75rem;
-  margin: 0;
-}
-.footer_newsletter .btn:hover{
-  color: black;
-  background-color: white;
-  font-weight: 800;
-}
+
 .footer_secondary {
   padding: 1rem 0.5rem;
   display: flex;
@@ -560,11 +538,13 @@ header a:hover {
   /*align-items: center;*/
   text-align: center;
 }
-.footer_secondary p i{
+
+.footer_secondary p i {
   color: red;
   margin-top: 1px;
   font-size: 1.25rem;
 }
+
 .footer_secondary p a {
   cursor: pointer;
   font-size: 1.5rem;
@@ -599,36 +579,42 @@ header a:hover {
 
 
 
-@media (max-width: 1280px){
+@media (max-width: 1280px) {
   .hero img {
     height: 400px;
     width: 400px;
   }
+
   /*  */
   .about {
     padding: 4% 5%;
   }
+
   .about .about_main img {
     width: 400px;
     height: 400px;
   }
+
   /*  */
   .services {
     padding: 4% 5%;
   }
+
   .services .services_items .services_item {
     margin: 0.5rem;
     padding: 1rem 0.5rem;
   }
+
   .services .services_items .services_item h1 {
     font-size: 4rem;
     padding-top: 0.75rem;
-    color: white;
   }
+
   /*  */
   .project {
     padding: 4% 5%;
   }
+
   .project .project_items .project_item {
     margin: 0.5rem;
     padding: 1rem 0.5rem;
@@ -638,70 +624,85 @@ header a:hover {
   .contact {
     padding: 4% 5%;
   }
+
   .contact .conatact_info .contact_first .contact_item {
     margin: 0.5rem;
     padding: 1rem 0.5rem;
   }
+
   .contact .conatact_info .contact_second {
     padding: 0rem 0.5rem;
   }
+
   .contact .conatact_info .contact_second form input,
   .contact .conatact_info .contact_second form textarea {
     width: 100%;
   }
-  
-  
-  
-  
+
+
+
+
 }
-@media (max-width: 768px){
-  .hero{
-    display: block!important;
-      /* padding-top: 150px; */
-      padding-top: 15vh;
+
+@media (max-width: 768px) {
+  .hero {
+    display: block !important;
+    /* padding-top: 150px; */
+    padding-top: 15vh;
   }
-  .hero .hero_info{
+
+  .hero .hero_info {
     padding-top: 1rem;
   }
 
 
   /*  */
-  .about_main{
-    display: block!important;
+  .about_main {
+    display: block !important;
   }
 
 
   /*  */
-  .services .services_items{
-    display: block!important;
-  }
-  /*  */
-  .project .project_items{
-    display: block!important;
+  .services .services_items {
+    display: block !important;
   }
 
   /*  */
-  .contact .conatact_info{
-    display: block!important;
+  .project .project_items {
+    display: block !important;
+  }
+
+  /*  */
+  .contact .conatact_info {
+    display: block !important;
+  }
+
+  /*  */
+  .footer_main {
+    grid-template-columns: 1fr !important;
   }
 }
-@media (max-width: 420px){
+
+@media (max-width: 420px) {
   header {
     padding: 0.25rem;
   }
-  
+
   header a {
     padding: 0rem;
     margin: 0.10rem;
   }
+
   .hero img {
     height: 300px;
     width: 300px;
   }
+
   /*  */
   .about {
     padding: 4% 5%;
   }
+
   .about .about_main img {
     width: 300px;
     height: 300px;
