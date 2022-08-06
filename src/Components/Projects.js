@@ -17,17 +17,18 @@ export default function Projects() {
       <h5>What Have I Designed</h5>
       <h1>My Portfolio</h1>
       <div className='project_items'>
+        
         <div className='project_item' data-aos="fade-right" duration="2000">
           <div className='project_image'>
           <img src={project1} alt='Realestate Marketplace'></img>
           </div>
-          
           <h3>Realestate Marketplace</h3>
           <p>
             <a href='https://github.com/Sujanban/realestate-marketplace'><GrGithub/></a>
             <a href='https://sujanban.github.io/realestate-marketplace/'><BsGlobe/></a>
           </p>
         </div>
+
         <div className='project_item' data-aos="fade-right" duration="3000">
           <img src={project2} alt='JS Snake Game'></img>
           <h3>JS Snake Game</h3>
@@ -36,6 +37,7 @@ export default function Projects() {
             <a href='https://sujanban.github.io/js-snake-game/'><BsGlobe/></a>
           </p>
         </div>
+
         <div className='project_item' data-aos="fade-right" duration="4000">
           <img src={project3} alt='Business Website'></img>
           <h3>Business Website</h3>
