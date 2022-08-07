@@ -9,7 +9,7 @@ export default function Services() {
   },[]);
   return (
     <section id='services'  className='services'>
-      <h5>What I Offer</h5>
+      <h5>What I Offer</h5><span className='highlight'></span>
       <h1>Services</h1>
       <div className='services_items'>
         <div className='services_item'  data-aos="fade-up">

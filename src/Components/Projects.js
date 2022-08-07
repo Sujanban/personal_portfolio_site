@@ -14,7 +14,7 @@ export default function Projects() {
   },[]);
   return (
     <section id='projects'  className='project'>
-      <h5>What Have I Designed</h5>
+      <h5>What Have I Designed</h5><span className='highlight'></span>
       <h1>My Portfolio</h1>
       <div className='project_items'>
         

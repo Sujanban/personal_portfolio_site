@@ -14,7 +14,7 @@ export default function About() {
     data-aos="fade-right"
     // data-aos-easing="ease-in-out"
     >
-      <h5>Get To Know</h5>
+      <h5>Get To Know</h5><span className='highlight'></span>
       <h1>About Me</h1>
       <div className='about_main'>
         <img src={profile} alt="profile"></img>

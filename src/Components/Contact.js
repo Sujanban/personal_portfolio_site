@@ -30,8 +30,9 @@ export default function Contact() {
   // emailjs
   return (
     <section id='contact' className='contact'>
-      <h5>Qny Query</h5>
+      <h5>Qny Query</h5><span className='highlight'></span>
       <h1>Lets Talk!</h1>
+      {/* <span className='highlight'></span> */}
       <div className='conatact_info'>
         <div className='contact_first'>
           <div className='contact_item' data-aos="fade-left">
