@@ -55,7 +55,8 @@ border: 1px solid rgba(255, 255, 255, 0.3); */
   text-decoration: none;
   scroll-behavior: smooth;
 }
-body{
+
+#root{
   overflow-x: hidden;
 }
 .btn {
@@ -647,7 +648,11 @@ header a:hover {
     grid-template-columns: 1fr !important;
   }
 }
-
+@media (max-width: 550px){
+  header{
+    bottom: 0rem;
+  }
+}
 @media (max-width: 420px) {
   header {
     padding: 0.25rem;
