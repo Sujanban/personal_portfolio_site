@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
-import profile from '../Images/hero.png';
+// import profile from '../Images/hero.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import profile from '../Images/profile1.png';
 
 export default function About() {
   useEffect(() => {
