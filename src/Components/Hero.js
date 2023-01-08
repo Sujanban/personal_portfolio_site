@@ -34,6 +34,7 @@ export default function Hero() {
       <div className='hero_info' data-aos="fade-left">
         <h5>Hello I'm</h5>
         <h1>Sujan Ban</h1>
+        Illustration by <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a>
         <h5>Frontend Developer</h5>
         <div className='cta'>
           <a href={cv} download className='btn-outline'>Download CV</a>
